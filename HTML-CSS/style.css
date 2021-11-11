@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row{
+    background: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px;
+}
+.login img{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.login h1{
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Architects Daughter', cursive;
+}
+.inp{
+    height: 50px;
+    width: 70%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 10px 10px 16px -6px rgba(125,101,101,0.78);
+-webkit-box-shadow: 10px 10px 16px -6px rgba(125,101,101,0.78);
+-moz-box-shadow: 10px 10px 16px -6px rgba(125,101,101,0.78);
+}
+.btn1{
+    height: 50px;
+    width: 50%;
+    outline: 0;
+    border: none;
+    border-radius: 60px;
+    font-weight: 600;
+    background: rgb(206, 28, 28);
+    color: whitesmoke;
+    transition: 1s;
+}
+.btn1:hover{
+    background: brown;
+}
