@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+header{
+    background: linear-gradient(to bottom, #dd2476, #ff512f);
+    .container-fluid{
+        .navbar{
+            a{
+                color: white;
+                font-family: 'Sniglet', cursive;
+            }
+            .navbar-brand{
+                padding-left: 8rem;
+            }
+            .navbar-nav{
+                .nav-item{
+                    padding: 0.9rem;
+                    &:last-child{
+                        padding-right: 10rem;
+                    }
+                }
+                .nav-link:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+    .container{
+        .row{
+            .col-md-7{
+                padding: 22vmin 1vmin;
+                padding-bottom: 35vmin;
+                h6{
+                    padding: 1vmin;
+                }
+                h1{
+                    padding: 0.1em 0em;
+                    font-size: 8.5vmin;
+                }
+                p{
+                    padding: 1vmin 5vmin;
+                }
+              .primary-btn{
+                  border-radius: 30px;
+                  font-weight: bold;
+              }
+            }
+            .col-md-5{
+                padding: 4.2vmin 1vmin;
+                img{
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+//end header, star section-1 
+main{
+    .section-1{
+        padding: 20vmin 0vmin;
+        .container{
+            .row{
+                .col-md-6{
+                    img{
+                        opacity: 0.8;
+                        width: 80%;
+                        border-radius: 0.2em;
+                    }
+                }
+                .col-md-6:last-child{
+                    position: relative;
+                    .panel{
+                        position: absolute;
+                        background: white;
+                        border-radius: 3px;
+                        text-align: left;
+                        box-shadow: 0px 25px 42px rgb(141, 136, 136);
+                        z-index: 1;
+                        top: 10vmin;
+                        left: -18vmin;
+                        padding: 13vmin 5vmin 20vmin 10vmin;
+                        p{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-2{
+        .cover{
+            width: 100%;
+            height: 55vmin;
+            background: url(img/pexels-photo-452738.jpeg);
+            background-position: -24rem -19rem;
+            background-size: 150%;
+            position: relative;
+            .content{
+                width: 100%;
+                height: 100%;
+                padding-top: 19vmin;
+                background:rgba(0,0,0,0.7);
+                > h1{
+                    font-size: 6vmin;
+                    color: white;
+                }
+                > p{
+                    font-size: 2vmin;
+                    color: white;
+                }
+            }
+        }
+        .container-fluid{
+            .numbers{
+                margin-top: -15vmin;
+                .rect{
+                    position: relative;
+                    z-index: 1;
+                    background: white;
+                    width: 17rem;
+                    height: 12rem;
+                    padding-top: 3.5vmin;
+                    margin: 1rem;
+                    border-radius: 0.5em;
+                    box-shadow: 1px 2px 50px rgba(255,0,0,0.349);
+                    h1{
+                        font-size: 5rem;
+                        color: tomato;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+

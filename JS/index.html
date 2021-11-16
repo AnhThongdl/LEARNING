@@ -1,13 +1,69 @@
-<script>
-    function tongchuso(n){
-        let sum = 0;
-        while(n>0){
-            sum += n%10;
-            n = parseInt(n/10);
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            border: 1px solid #acacac;
+            padding: 2px;
         }
-        return sum;
-    }
-    console.log(tongchuso(12345));
-    console.log(tongchuso(654238));
-    console.log(parseInt(1/10));
-</script>
+    </style>
+    <script>
+        var h = null;
+        var m = null;
+        var s = null;
+        var timeout = null;
+        function start(){
+            if(h === null){
+                h = parseInt(document.getElementById("h_val").value);
+                m = parseInt(document.getElementById("m_val").value);
+                s =  parseInt(document.getElementById("s_val").value);
+            }
+            if(s === -1){
+                m -=1;
+                s = 59;
+            }
+            if(m === -1){
+                h -=1;
+                m =59;
+            }
+            if(h === -1){
+                clearTimeout(timeout);
+                alert("het gio");
+                return flase;
+            }
+            document.getElementById("h").innerHTML = h.toString();
+            document.getElementById("m").innerHTML = m.toString();
+            document.getAnimations("s").innerHTML = s.toString();
+            timeout = setTimeout(function(){
+                s--;
+                start();
+            },1000);
+        }
+        function stop(){
+            clearTimeout(timeout);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <strong>
+            nhap thong tin ban dau: <br>
+        </strong>
+        <input type="text" id="h_val" placeholder="Gio" value=""><br>
+        <input type="text" id="m_val" placeholder="Phut" value=""><br>
+        <input type="text" id="s_val" placeholder="Giay" value=""><br>
+        <input type="button" value="Start" onclick="start()"><br>
+        <input type="button" value="Stop" onclick="stop()"><br><br>
+    </div>
+
+    <div>
+        <span id="h">Gio</span>
+        <span id="m">Phut</span>
+        <span id="s">Giay</span>
+    </div>
+</body>
+</html>
