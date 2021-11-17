@@ -89,5 +89,93 @@ main .section-2 .container-fluid .numbers {
     main .section-2 .container-fluid .numbers .rect h1 {
       font-size: 5rem;
       color: tomato; }
+main .section-2 .purchase h1 {
+  padding-top: 15vmin;
+  padding-bottom: 0.1em; }
+main .section-2 .purchase p {
+  font-size: 3vmin;
+  padding-bottom: 10vmin; }
+main .section-2 .purchase .cards .card {
+  width: 22rem;
+  margin: 3vmin 3vmin; }
+  main .section-2 .purchase .cards .card .card-body {
+    margin: 0;
+    padding: 0; }
+    main .section-2 .purchase .cards .card .card-body .title {
+      background: rgba(208, 241, 241, 0.219);
+      padding: 1.4em 2.5em;
+      font-size: 2vmin; }
+  main .section-2 .purchase .cards .card .card-text {
+    padding: 2.5rem 3rem; }
+  main .section-2 .purchase .cards .card .pricing {
+    background: rgba(208, 241, 241, 0.219);
+    border-top-right-radius: 170px;
+    border-top-left-radius: 170px; }
+    main .section-2 .purchase .cards .card .pricing h1 {
+      font-size: 9vmin;
+      padding: 1em 0.5em; }
+    main .section-2 .purchase .cards .card .pricing .primary-btn {
+      border-radius: 30px;
+      font-weight: bold; }
+main .section-3 {
+  margin-top: 15vmin;
+  height: 70vmin;
+  background: linear-gradient(to bottom, #dd2476, #ff512f); }
+  main .section-3 .row .col-md-12 h1 {
+    padding: 2em 0 0.5em 0;
+    color: white;
+    font-size: 6vmin; }
+  main .section-3 .row .col-md-12 p {
+    padding: 0.4em;
+    padding-bottom: 2em;
+    font-size: 2vmin;
+    color: white; }
+  main .section-3 .row .col-md-6 .desktop {
+    background: white;
+    display: inline-block;
+    border-radius: 3em;
+    padding: 2vmin 4vmin; }
+    main .section-3 .row .col-md-6 .desktop h3 {
+      font-size: 4vmin; }
+main .section-4 .container h1 {
+  font-size: 8vmin;
+  padding-top: 14vmin; }
+main .section-4 .team {
+  padding: 10vmin 4vmin; }
+  main .section-4 .team .card {
+    width: 22em;
+    margin-top: 10vmin; }
+    main .section-4 .team .card .card-img-top .border-radius {
+      border-radius: 360px;
+      width: 60%; }
+    main .section-4 .team .card .card-body .card-text {
+      padding: 0.5em; }
+    main .section-4 .team .card .card-body a {
+      font-size: 1.5em; }
+  main .section-4 .team .carousel .carousel-item {
+    padding-left: 3rem; }
+    main .section-4 .team .carousel .carousel-item .border-radius {
+      border-radius: 360px;
+      width: 60%; }
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  padding: 14vmin 10vmin; }
+  footer .row .col-md-5 p span {
+    color: #ff512f; }
+  footer .row .col-md-5 input {
+    border: none !important; }
+  footer .row .col-md-5 input::placeholder {
+    color: white !important; }
+  footer .row .col-md-5 .input-group-text {
+    background: linear-gradient(to bottom, #dd2476, #ff512f); }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease; }
 
 /*# sourceMappingURL=index.css.map */
