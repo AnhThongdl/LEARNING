@@ -45,7 +45,7 @@ header{
                 p{
                     padding: 1vmin 5vmin;
                 }
-              .primary-btn{
+               .primary-btn{
                   border-radius: 30px;
                   font-weight: bold;
               }
@@ -136,6 +136,147 @@ main{
                 }
             }
         }
+        .purchase{
+            h1{
+                padding-top: 15vmin;
+                padding-bottom: 0.1em;
+            }
+            p{
+                font-size: 3vmin;
+                padding-bottom: 10vmin;
+            }
+            .cards{
+                .card{
+                    width: 22rem;
+                    margin: 3vmin 3vmin;
+                    .card-body{
+                        margin: 0;
+                        padding: 0;
+                        .title{
+                            background: rgba(208,241,241,0.219);
+                            padding: 1.4em 2.5em;
+                            font-size: 2vmin;
+                        }
+                    }
+                    .card-text{
+                        padding: 2.5rem 3rem;
+                    }
+                    .pricing{
+                        background: rgba(208,241,241,0.219);
+                        border-top-right-radius: 170px;
+                        border-top-left-radius: 170px;
+                        h1{
+                            font-size: 9vmin;
+                            padding: 1em 0.5em;
+                        }
+                        .primary-btn{
+                            border-radius: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .section-3{
+        margin-top: 15vmin;
+        height: 70vmin;
+        background: linear-gradient(to bottom, #dd2476, #ff512f);
+        .row{
+            .col-md-12{
+                h1{
+                    padding: 2em 0 0.5em 0;
+                    color: white;
+                    font-size: 6vmin;
+                }
+                p{
+                    padding: 0.4em;
+                    padding-bottom: 2em;
+                    font-size: 2vmin;
+                    color: white;
+                }
+            }
+        }
+        .row{
+            .col-md-6{
+                .desktop{
+                    background: white;
+                    display: inline-block;
+                    border-radius: 3em;
+                    padding: 2vmin 4vmin;
+                    h3{
+                        font-size: 4vmin;
+                    }
+                }
+            }
+        }
+    }
+    .section-4{
+        .container{
+            h1{
+                font-size: 8vmin;
+                padding-top: 14vmin;
+            }
+        }
+        .team{
+            padding: 10vmin 4vmin;
+            .card{
+                width: 22em;
+                margin-top: 10vmin;
+                .card-img-top{
+                    .border-radius{
+                        border-radius: 360px;
+                        width: 60%;
+                    }
+                }
+                .card-body{
+                    .card-text{
+                        padding: 0.5em;
+                    }
+                    a{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+            .carousel{
+                .carousel-item{
+                    padding-left: 3rem;
+                    .border-radius{
+                        border-radius: 360px;
+                        width: 60%;
+                    }
+                }
+            }
+        }
     }
 }
-
+footer{
+    background: rgba(0,0,0,0.815);
+    padding: 14vmin 10vmin;
+    .row{
+        .col-md-5{
+            p{
+                span{
+                    color: #ff512f;
+                }
+            }
+            input{
+                border: none !important;
+            }
+            input::placeholder{
+                color: white !important;
+            }
+            .input-group-text{
+                background: linear-gradient(to bottom, #dd2476, #ff512f);
+            }
+        }
+    }
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.815);
+    z-index: 9999;
+    transition: all 1.5s ease;
+}
