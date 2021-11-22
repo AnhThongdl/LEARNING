@@ -1,69 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        span{
-            border: 1px solid #acacac;
-            padding: 2px;
-        }
-    </style>
-    <script>
-        var h = null;
-        var m = null;
-        var s = null;
-        var timeout = null;
-        function start(){
-            if(h === null){
-                h = parseInt(document.getElementById("h_val").value);
-                m = parseInt(document.getElementById("m_val").value);
-                s =  parseInt(document.getElementById("s_val").value);
-            }
-            if(s === -1){
-                m -=1;
-                s = 59;
-            }
-            if(m === -1){
-                h -=1;
-                m =59;
-            }
-            if(h === -1){
-                clearTimeout(timeout);
-                alert("het gio");
-                return flase;
-            }
-            document.getElementById("h").innerHTML = h.toString();
-            document.getElementById("m").innerHTML = m.toString();
-            document.getAnimations("s").innerHTML = s.toString();
-            timeout = setTimeout(function(){
-                s--;
-                start();
-            },1000);
-        }
-        function stop(){
-            clearTimeout(timeout);
-        }
-    </script>
-</head>
-<body>
-    <div>
-        <strong>
-            nhap thong tin ban dau: <br>
-        </strong>
-        <input type="text" id="h_val" placeholder="Gio" value=""><br>
-        <input type="text" id="m_val" placeholder="Phut" value=""><br>
-        <input type="text" id="s_val" placeholder="Giay" value=""><br>
-        <input type="button" value="Start" onclick="start()"><br>
-        <input type="button" value="Stop" onclick="stop()"><br><br>
-    </div>
+<script>
+    function Mouse(color, weight){
+	this.color = color;
+  this.weight = weight;
+  this.dead = false;
+};
+Mouse.prototype.die = function(){
+	this.dead = true;
+};
 
-    <div>
-        <span id="h">Gio</span>
-        <span id="m">Phut</span>
-        <span id="s">Giay</span>
-    </div>
-</body>
-</html>
+function Cat(name){
+	this.name = name;
+  this.stomach = [];
+}
+Cat.prototype.eat = function(mouse){
+	this.stomach.push(mouse);
+  mouse.die();
+};
+
+var blackMouse = new Mouse('black', 4);
+var whiteMouse = new Mouse('white', 6);
+/* console.log(blackMouse, whiteMouse); */
+
+var tom = new Cat('tom');
+tom.eat(blackMouse);
+tom.eat(whiteMouse);
+console.log(tom);
+</script>
