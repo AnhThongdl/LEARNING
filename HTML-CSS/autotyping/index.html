@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css">
+</head>
+<body>
+
+    <div class="header">
+
+        <nav class="navbar">
+            <img src="images/logomugiwara.png" alt="" class="navbar__logo">
+            <ul class="navbar__menu">
+                <li><a href="#">BIOGRAPHY</a></li>
+                <li><a href="#">AMBITION</a></li>
+                <li><a href="#">STRENGTH</a></li>
+                <li><a href="#">CREW's MEMBER</a></li>
+            </ul>
+            <img src="images/menu.png" alt="" class="navbar__menu-icon">
+        </nav>
+
+        <div class="text-box">
+            <h1>I'm <span class="auto-input"></span></h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, <br>amet atque! Minus accusamus aliquam quis provident iste fugit</p>
+            <a href="#">Join Our Crew</a>
+            <a href="#" class="btn">DON'T YOU DARE!!!</a>
+        </div>
+        <img src="images/luffy.png" alt="" class="user-img">
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Monkey D Luffy", "Pirate King", "Let Adventure!!"], 
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+
+</body>
+</html>
