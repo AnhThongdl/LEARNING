@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button type="button" name="play" id="play" onclick="play()">play</button>
+    <script>
+        function play(){
+            let maxNumber = parseInt(prompt("nhap so lon nhat"))
+            let n = Math.floor(Math.random()*maxNumber);
+            let num, gameOver = 1;
+            do{
+                num = parseInt(prompt("doan so:"))
+
+                if( num < n ){
+                    alert("be qua")
+                }else if(num > n){
+                    alert("lon qua")
+                }
+                gameOver++
+            }while(num != n && gameOver <= 3)
+
+            if(gameOver > 3){
+                document.write("game over");
+            } else
+            {
+                document.write("dung zoi");
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

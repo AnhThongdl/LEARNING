@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;1,500&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+$green: #4daf54;
+
+body{
+    background: linear-gradient(to right, #4daf54, #3d8888);
+}
+
+.card{
+    margin: 5rem auto;
+    width: 20rem;
+    height: 27rem;
+    background: #272d40;
+    border-radius: .8rem;
+    color: white;
+    position: relative;
+
+    .card__heart{
+        font-size: 2rem;
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+
+    .card__cart{
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+
+    .card__img {
+        width: 90%;
+        transition: 0.5s;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            padding-top: 2rem;
+        }
+    }
+
+    &:hover .card__img{
+        transform: rotate(-20deg) translateY(-5rem);
+    }
+
+    .card__title{
+        text-align: center;
+        font-size: 1.5rem;
+        color: $green;
+        font-weight: bold;
+    }
+
+    .card__price{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .card__size{
+        display: flex;
+        align-items: center;
+        padding-left: 1rem;
+        margin-top: 10rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        transition-delay: 0.2s;
+
+        span{
+            padding: .3rem .5rem;
+            margin: 0 .5rem;
+            border-radius: .5rem;
+            background: #dadada;
+            color: black;
+        }
+    }
+
+    &:hover .card__size{
+        visibility: visible;
+        opacity: 1;
+        margin-top: 1rem;
+    }
+
+    .card__color{
+        display: flex;
+        align-items: center;
+        padding: .5rem 1rem;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        transition-delay: 0.2s;
+
+        span{
+            padding: .3rem .5rem;
+            margin: 0 .5rem;
+            border-radius: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .card__color--red{
+            background: red;
+        }
+
+        .card__color--green{
+            background: green;
+        }
+
+        .card__color--black{
+            background: black;
+        }
+    }
+
+    &:hover .card__color{
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .card__action{
+        text-align: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s;
+        transition-delay: 0.2s;
+
+        button{
+            background: $green;
+            border: none;
+            outline: none;
+            margin-left: .3rem;
+            padding: .3rem;
+            width: 40%;
+            border-radius: .5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        &:hover {
+            transform: scaleX(1.1);
+        }
+    }
+
+    &:hover .card__action{
+        visibility: visible;
+        opacity: 1;
+    }
+}
